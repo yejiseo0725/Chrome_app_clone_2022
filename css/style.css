@@ -1,3 +1,16 @@
+* {
+  color: white;
+}
+
+.input {
+  color: #EE959E;
+}
+
+::selection {
+  background-color: #EE959E;
+  color: white;
+}
+
 .hidden {
   display: none;
 }
