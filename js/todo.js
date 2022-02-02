@@ -18,13 +18,14 @@ function deleteToDo(event) {
 }
 
 function paintToDo(newTodo) {
+  const button = document.createElement("button");
+  button.innerText = "❌";
   const liPaint = document.createElement("li");
   liPaint.id = newTodo.id;
   const spanPaint = document.createElement("span");
   spanPaint.innerText = newTodo.text;
-  const button = document.createElement("button");
-  button.innerText = "❌";
   button.addEventListener("click", deleteToDo);
+
   liPaint.appendChild(spanPaint); // li 는 span 이라는 자식을 가지게 된다.
   liPaint.appendChild(button);
   toDoList.appendChild(liPaint);

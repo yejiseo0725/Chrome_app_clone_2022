@@ -11,7 +11,8 @@ function onGeoOk(position) {
       const weather = document.querySelector("#weather span:first-child");
       const city = document.querySelector("#weather span:nth-child(2)");
       const temp = document.querySelector("#weather span:last-child");
-      weather.innerText = `You are located in: ${data.name} Weather: ${data.weather[0].main} / ${data.main.temp}`;
+      weather.innerText = data.name;
+      city.innerText = `${data.weather[0].main} @ ${data.main.temp}`;
     });
 }
 

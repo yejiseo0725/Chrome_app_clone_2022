@@ -8,6 +8,13 @@
     <title>Momentum</title>
   </head>
   <body>
+    <i class="fas fa-map-marker-alt"></i>
+    <div id="weather">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="dot">º</div>
     <h2 id="clock">00:00:00</h2>
     <form class="hidden" id="login-form">
       <input
@@ -21,21 +28,12 @@
     </form>
 
     <h1 class="hidden" id="greeting"></h1>
+    <div id="main-focus">What is your main focus for today?</div>
     <form id="todo-form">
-      <input
-        class="input"
-        type="text"
-        placeholder="Write a To DO and Press Enter"
-        required
-      />
+      <input class="input" type="text" required />
     </form>
     <ul id="todo-list"></ul>
     <div id="quote">
-      <span></span>
-      <span></span>
-    </div>
-    <div id="weather">
-      <span></span>
       <span></span>
       <span></span>
     </div>
@@ -45,5 +43,9 @@
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script
+      src="https://kit.fontawesome.com/6478f529f2.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
